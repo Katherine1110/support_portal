@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/support_portal/static/css/main.2f02a639.css",
+    "main.js": "/support_portal/static/js/main.52344810.js",
+    "static/js/787.5758865e.chunk.js": "/support_portal/static/js/787.5758865e.chunk.js",
+    "static/media/collage5.png": "/support_portal/static/media/collage5.59c5f090a92fcf4e701d.png",
+    "static/media/collage4.png": "/support_portal/static/media/collage4.b370cb42aabb52f7ce3d.png",
+    "static/media/collage1.png": "/support_portal/static/media/collage1.45997e3d4ce59ea594f5.png",
+    "static/media/collage2.png": "/support_portal/static/media/collage2.76293a4e87d92834a1b0.png",
+    "static/media/collage3.png": "/support_portal/static/media/collage3.5e414071e3dda019157b.png",
+    "static/media/storage.png": "/support_portal/static/media/storage.99ce1464e893b33b9d4f.png",
+    "static/media/bicycle.png": "/support_portal/static/media/bicycle.494ba7b86174d9c0d9ed.png",
+    "static/media/lastPic.png": "/support_portal/static/media/lastPic.04fb50b9508dff2f169c.png",
+    "static/media/logo.png": "/support_portal/static/media/logo.fad83a5cc2663d7c8c8d.png",
+    "static/media/logo.svg": "/support_portal/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/support_portal/index.html",
+    "main.2f02a639.css.map": "/support_portal/static/css/main.2f02a639.css.map",
+    "main.52344810.js.map": "/support_portal/static/js/main.52344810.js.map",
+    "787.5758865e.chunk.js.map": "/support_portal/static/js/787.5758865e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2f02a639.css",
+    "static/js/main.52344810.js"
+  ]
+}

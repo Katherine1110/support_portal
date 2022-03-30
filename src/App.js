@@ -13,7 +13,8 @@ import AreasOfActivity from './components/AreasOfActivity';
 
 function App() {
   return (
-    <>
+    // className="App"
+    <div>
       <Intro />
       <WhatWeNeed />
       <Donation />
@@ -23,7 +24,7 @@ function App() {
       <Shelter1 />
       <Shelter2 />
       <AreasOfActivity />
-    </>
+    </div>
   );
 }
 

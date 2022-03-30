@@ -3,18 +3,20 @@ import Collage5 from '../images/collage5.png';
 
 function Shelter1() {
   return (
-    <>
+    <div className="container">
       <div>
         <img src={Logo} alt="Logo" />
       </div>
-      <h2>Сховище, яке ми створили:</h2>
 
       {/* Gallery1  */}
-      <div>
-        <img src={Collage5} alt="Shelter" />
+      <div className="card">
+        <div className="card-body">
+          <h2 className="card-title">Сховище, яке ми створили:</h2>
+          <img className="img-fluid" src={Collage5} alt="Shelter" />
+        </div>
       </div>
       {/* Gallery1 */}
-    </>
+    </div>
   );
 }
 

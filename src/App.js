@@ -9,10 +9,11 @@ import Activity2 from './components/Activity2';
 import Activity3 from './components/Activity3';
 import Shelter1 from './components/Shelter1';
 import Shelter2 from './components/Shelter2';
+import AreasOfActivity from './components/AreasOfActivity';
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Intro />
       <WhatWeNeed />
       <Donation />
@@ -21,7 +22,8 @@ function App() {
       <Activity3 />
       <Shelter1 />
       <Shelter2 />
-    </div>
+      <AreasOfActivity />
+    </>
   );
 }
 

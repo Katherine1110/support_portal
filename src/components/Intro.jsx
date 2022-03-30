@@ -5,7 +5,7 @@ function Intro() {
   return (
     <div className="container">
       <div className="">
-        <img src={Logo} alt="logo" />
+        <img className="mx-auto d-block" src={Logo} alt="logo" />
       </div>
       <div className="card">
         <div className="card-body">

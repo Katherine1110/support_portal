@@ -13,7 +13,7 @@ function Donation() {
             <h2 className="card-title">А ви можете зробити пожертву на рахунок:</h2>
           </div>
           <div>
-            <h4>ENEFICIARY</h4>
+            <h4>BENEFICIARY</h4>
             <p>
               Получатель (Ф.И.О. получателя счета латиницей) ANTOSHYNA KRYSTYNA 01001, Ukraine,city
               Kyiv, boulevard Druzhby Narodiv,building 3,Housing B,flat 12

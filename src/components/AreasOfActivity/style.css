@@ -1,0 +1,4 @@
+.mark::before {
+  content: '';
+  background-image: url('../../images/checkmark2.svg');
+}

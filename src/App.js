@@ -9,11 +9,11 @@ import Activity2 from './components/Activity2';
 import Activity3 from './components/Activity3';
 import Shelter1 from './components/Shelter1';
 import Shelter2 from './components/Shelter2';
-import AreasOfActivity from './components/AreasOfActivity';
+import AreasOfActivity from './components/AreasOfActivity/AreasOfActivity';
 
 function App() {
   return (
-    <>
+    <div>
       <Intro />
       <WhatWeNeed />
       <Donation />
@@ -23,7 +23,7 @@ function App() {
       <Shelter1 />
       <Shelter2 />
       <AreasOfActivity />
-    </>
+    </div>
   );
 }
 

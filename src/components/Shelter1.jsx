@@ -3,18 +3,20 @@ import Collage4 from '../images/collage4.png';
 
 function Shelter1() {
   return (
-    <>
+    <div className="container">
       <div>
-        <img src={Logo} alt="Logo" />
+        <img className="mx-auto d-block" src={Logo} alt="Logo" />
       </div>
-      <h2>Сховище, яке ми створили:</h2>
 
       {/* Gallery1  */}
-      <div>
-        <img src={Collage4} alt="Shelter" />
+      <div className="card">
+        <div className="card-body">
+          <h2 className="card-title mb-4">Сховище, яке ми створили:</h2>
+          <img className="img-fluid mx-auto d-block" src={Collage4} alt="Shelter" />
+        </div>
       </div>
       {/* Gallery1 */}
-    </>
+    </div>
   );
 }
 

@@ -3,18 +3,20 @@ import Collage1 from '../images/collage1.png';
 
 function Activity1() {
   return (
-    <>
+    <div className="container">
       <div>
-        <img src={Logo} alt="Logo" />
+        <img className="mx-auto d-block" src={Logo} alt="Logo" />
       </div>
-      <h2>Наша діяльність в фото:</h2>
 
       {/* Gallery1  */}
-      <div>
-        <img src={Collage1} alt="Our activity" />
+      <div className="card">
+        <div className="card-body">
+          <h2 className="card-title mb-4">Наша діяльність в фото:</h2>
+          <img className="img-fluid mx-auto d-block" src={Collage1} alt="Our activity" />
+        </div>
       </div>
       {/* Gallery1 */}
-    </>
+    </div>
   );
 }
 

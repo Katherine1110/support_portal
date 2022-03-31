@@ -1,5 +1,8 @@
-import Logo from '../images/logo.png';
-import LastPic from '../images/lastPic.png';
+import Logo from '../../images/logo.png';
+import LastPic from '../../images/lastPic.png';
+import Mark from '../../images/checkmark2.svg';
+import styles from './style.css';
+import React from 'react';
 
 function AreasOfActivity() {
   return (
@@ -14,9 +17,15 @@ function AreasOfActivity() {
 
           <ul className="list-group list-group-flush mb-4">
             <li className="list-group-item">
-              Прийом та розподіл гуманітарної допомоги від приватних осіб та організацій, у тому
-              числі закордонних;
+              <span>
+                <img src={Mark} alt="" srcset="" />
+              </span>
+              <span>
+                Прийом та розподіл гуманітарної допомоги від приватних осіб та організацій, у тому
+                числі закордонних;
+              </span>
             </li>
+
             <li className="list-group-item">
               Прийом пожертв від приватних осіб та організацій, у тому числі закордонних;
             </li>

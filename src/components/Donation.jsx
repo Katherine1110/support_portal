@@ -67,8 +67,17 @@ function Donation() {
           </div>
 
           <div className="input-group input-group-sm mb-3">
-            <span className="input-group-text">BENEFICIARY:</span>
-            <input className="form-control" type="text" value={BENEFICIARY} disabled />
+            <span className="input-group-text" id="inputGroup-sizing-sm">
+              BENEFICIARY:
+            </span>
+            <input
+              className="form-control"
+              type="text"
+              value={BENEFICIARY}
+              disabled
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-sm"
+            />
             <button
               className="btn btn-outline-secondary"
               onClick={copyBeneficiary}
@@ -78,24 +87,51 @@ function Donation() {
           </div>
 
           <div className="input-group input-group-sm mb-3">
-            <span className="input-group-text">IBAN:</span>
-            <input className="form-control" type="text" value={IBAN} disabled />
+            <span className="input-group-text" id="inputGroup-sizing-sm">
+              IBAN:
+            </span>
+            <input
+              className="form-control"
+              type="text"
+              value={IBAN}
+              disabled
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-sm"
+            />
             <button className="btn btn-outline-secondary" onClick={copyIban} disabled={!IBAN}>
               <img src={Copy} alt="Copy button" />
             </button>
           </div>
 
           <div className="input-group input-group-sm mb-3">
-            <span className="input-group-text">ACCOUNT:</span>
-            <input className="form-control" type="text" value={ACCOUNT} disabled />
+            <span className="input-group-text" id="inputGroup-sizing-sm">
+              ACCOUNT:
+            </span>
+            <input
+              className="form-control"
+              type="text"
+              value={ACCOUNT}
+              disabled
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-sm"
+            />
             <button className="btn btn-outline-secondary" onClick={copyAccount} disabled={!ACCOUNT}>
               <img src={Copy} alt="Copy button" />
             </button>
           </div>
 
           <div className="input-group input-group-sm mb-3">
-            <span className="input-group-text">BANK OF BENEFICIARY:</span>
-            <input className="form-control" type="text" value={BANK_OF_BENEFICIARY} disabled />
+            <span className="input-group-text" id="inputGroup-sizing-sm">
+              BANK OF BENEFICIARY:
+            </span>
+            <input
+              className="form-control"
+              type="text"
+              value={BANK_OF_BENEFICIARY}
+              disabled
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-sm"
+            />
             <button
               className="btn btn-outline-secondary"
               onClick={copyBank_of_beneficiary}
@@ -105,8 +141,17 @@ function Donation() {
           </div>
 
           <div className="input-group input-group-sm mb-3">
-            <span className="input-group-text">CORRESPONDENT ACCOUNT:</span>
-            <input className="form-control" type="text" value={CORRESPONDENT_ACCOUNT} disabled />
+            <span className="input-group-text" id="inputGroup-sizing-sm">
+              CORRESPONDENT ACCOUNT:
+            </span>
+            <input
+              className="form-control"
+              type="text"
+              value={CORRESPONDENT_ACCOUNT}
+              disabled
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-sm"
+            />
             <button
               className="btn btn-outline-secondary"
               onClick={copy_Correspondent_Account}
@@ -115,8 +160,17 @@ function Donation() {
             </button>
           </div>
           <div className="input-group input-group-sm mb-3">
-            <span className="input-group-text">INTERMEDIARY BANK:</span>
-            <input className="form-control" type="text" value={INTERMEDIARY_BANK} disabled />
+            <span className="input-group-text" id="inputGroup-sizing-sm">
+              INTERMEDIARY BANK:
+            </span>
+            <input
+              className="form-control"
+              type="text"
+              value={INTERMEDIARY_BANK}
+              disabled
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-sm"
+            />
             <button
               className="btn btn-outline-secondary"
               onClick={copy_Intermediary_Bank}
@@ -126,8 +180,17 @@ function Donation() {
           </div>
 
           <div className="input-group input-group-sm mb-3">
-            <span className="input-group-text">CURRENCY:</span>
-            <input className="form-control" type="text" value={CURRENCY} disabled />
+            <span className="input-group-text" id="inputGroup-sizing-sm">
+              CURRENCY:
+            </span>
+            <input
+              className="form-control"
+              type="text"
+              value={CURRENCY}
+              disabled
+              aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-sm"
+            />
             <button className="btn btn-outline-secondary" onClick={copy_Currency}>
               <img src={Copy} alt="Copy button" />
             </button>

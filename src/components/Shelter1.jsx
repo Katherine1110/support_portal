@@ -1,3 +1,7 @@
+import AwesomeSlider from 'react-awesome-slider';
+import withAutoplay from 'react-awesome-slider/dist/autoplay';
+import 'react-awesome-slider/dist/styles.css';
+
 import Logo from '../images/logo.png';
 import ShelterPic2 from '../images/shelter/shelter2.png';
 import ShelterPic3 from '../images/shelter/shelter3.png';
@@ -16,178 +20,32 @@ import ShelterPic15 from '../images/shelter/shelter15.png';
 import ShelterPic16 from '../images/shelter/shelter16.png';
 
 function Shelter1() {
+  const AutoplaySlider = withAutoplay(AwesomeSlider);
   return (
-    <div className="container bg-img">
-      <div
-        id="carouselExampleDark"
-        className="carousel carousel-dark slide"
-        data-bs-ride="carousel">
-        <div className="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="0"
-            className="active"
-            aria-current="true"
-            aria-label="Slide 1"></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="3"
-            aria-label="Slide 4"></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="4"
-            aria-label="Slide 5"></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="5"
-            aria-label="Slide 6"></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="6"
-            aria-label="Slide 7"></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="7"
-            aria-label="Slide 8"></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="8"
-            aria-label="Slide 9"></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="9"
-            aria-label="Slide 10"></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="10"
-            aria-label="Slide 11"></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="11"
-            aria-label="Slide 12"></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="12"
-            aria-label="Slide 13"></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="13"
-            aria-label="Slide 14"></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="14"
-            aria-label="Slide 15"></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleDark"
-            data-bs-slide-to="15"
-            aria-label="Slide 16"></button>
-        </div>
-        <div className="carousel-inner">
-          <div className="carousel-item active" data-bs-interval="2000">
-            <img src={ShelterPic2} className="d-block w-100" alt="ShelterPic2" />
-            <div className="carousel-caption d-none d-md-block"></div>
-          </div>
-          <div className="carousel-item" data-bs-interval="2000">
-            <img src={ShelterPic3} className="d-block w-100" alt="ShelterPic3" />
-            <div className="carousel-caption d-none d-md-block"></div>
-          </div>
-          <div className="carousel-item" data-bs-interval="2000">
-            <img src={ShelterPic4} className="d-block w-100" alt="ShelterPic4" />
-            <div className="carousel-caption d-none d-md-block"></div>
-          </div>
-          <div className="carousel-item" data-bs-interval="2000">
-            <img src={ShelterPic5} className="d-block w-100" alt="ShelterPic4" />
-            <div className="carousel-caption d-none d-md-block"></div>
-          </div>
-          <div className="carousel-item" data-bs-interval="2000">
-            <img src={ShelterPic6} className="d-block w-100" alt="ShelterPic4" />
-            <div className="carousel-caption d-none d-md-block"></div>
-          </div>
-          <div className="carousel-item" data-bs-interval="2000">
-            <img src={ShelterPic7} className="d-block w-100" alt="ShelterPic4" />
-            <div className="carousel-caption d-none d-md-block"></div>
-          </div>
-          <div className="carousel-item" data-bs-interval="2000">
-            <img src={ShelterPic8} className="d-block w-100" alt="ShelterPic4" />
-            <div className="carousel-caption d-none d-md-block"></div>
-          </div>
-          <div className="carousel-item" data-bs-interval="2000">
-            <img src={ShelterPic9} className="d-block w-100" alt="ShelterPic4" />
-            <div className="carousel-caption d-none d-md-block"></div>
-          </div>
-          <div className="carousel-item" data-bs-interval="2000">
-            <img src={ShelterPic10} className="d-block w-100" alt="ShelterPic4" />
-            <div className="carousel-caption d-none d-md-block"></div>
-          </div>
-          <div className="carousel-item" data-bs-interval="2000">
-            <img src={ShelterPic11} className="d-block w-100" alt="ShelterPic4" />
-            <div className="carousel-caption d-none d-md-block"></div>
-          </div>
-          <div className="carousel-item" data-bs-interval="2000">
-            <img src={ShelterPic12} className="d-block w-100" alt="ShelterPic4" />
-            <div className="carousel-caption d-none d-md-block"></div>
-          </div>
-          <div className="carousel-item" data-bs-interval="2000">
-            <img src={ShelterPic13} className="d-block w-100" alt="ShelterPic4" />
-            <div className="carousel-caption d-none d-md-block"></div>
-          </div>
-          <div className="carousel-item" data-bs-interval="2000">
-            <img src={ShelterPic14} className="d-block w-100" alt="ShelterPic4" />
-            <div className="carousel-caption d-none d-md-block"></div>
-          </div>
-          <div className="carousel-item" data-bs-interval="2000">
-            <img src={ShelterPic15} className="d-block w-100" alt="ShelterPic4" />
-            <div className="carousel-caption d-none d-md-block"></div>
-          </div>
-          <div className="carousel-item" data-bs-interval="2000">
-            <img src={ShelterPic16} className="d-block w-100" alt="ShelterPic4" />
-            <div className="carousel-caption d-none d-md-block"></div>
-          </div>
-        </div>
-        <button
-          className="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleDark"
-          data-bs-slide="prev">
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button
-          className="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleDark"
-          data-bs-slide="next">
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Next</span>
-        </button>
-      </div>
+    <div className="container">
       <div>
         <img className="mx-auto d-block" src={Logo} alt="Logo" />
       </div>
+      <AutoplaySlider
+        play={true}
+        cancelOnInteraction={false} // should stop playing on user interaction
+        interval={3000}>
+        <div data-src={ShelterPic2} />
+        <div data-src={ShelterPic3} />
+        <div data-src={ShelterPic4} />
+        <div data-src={ShelterPic5} />
+        <div data-src={ShelterPic6} />
+        <div data-src={ShelterPic7} />
+        <div data-src={ShelterPic8} />
+        <div data-src={ShelterPic9} />
+        <div data-src={ShelterPic10} />
+        <div data-src={ShelterPic11} />
+        <div data-src={ShelterPic12} />
+        <div data-src={ShelterPic13} />
+        <div data-src={ShelterPic14} />
+        <div data-src={ShelterPic15} />
+        <div data-src={ShelterPic16} />
+      </AutoplaySlider>
     </div>
   );
 }

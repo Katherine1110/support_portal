@@ -40,6 +40,11 @@ function NavBar() {
                 </NavLink>
               </li>
               <li className="nav-item">
+                <NavLink to="/what_we_need" activeclassname="selected" className="nav-link">
+                  Потребуємо
+                </NavLink>
+              </li>
+              <li className="nav-item">
                 <NavLink to="/areas-of-activity" activeclassname="selected" className="nav-link">
                   Завдання та напрямками діяльності Організації
                 </NavLink>

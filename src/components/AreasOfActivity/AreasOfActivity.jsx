@@ -18,9 +18,6 @@ function AreasOfActivity() {
           <ul className="list-group list-group-flush mb-4">
             <li className="list-group-item">
               <span>
-                <img src={Mark} alt="" srcset="" />
-              </span>
-              <span>
                 Прийом та розподіл гуманітарної допомоги від приватних осіб та організацій, у тому
                 числі закордонних;
               </span>

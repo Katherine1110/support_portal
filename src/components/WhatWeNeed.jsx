@@ -8,8 +8,8 @@ function WhatWeNeed() {
       <div>
         <img className="mx-auto d-block" src={Logo} alt="logo" />
       </div>
-      <div class="card">
-        <div class="card-body">
+      <div className="card">
+        <div className="card-body">
           <h1 className="card-title">Потребуємо:</h1>
           <ul className="list-group list-group-flush mb-4">
             <li className="list-group-item">Харчові продукти тривалого зберігання;</li>

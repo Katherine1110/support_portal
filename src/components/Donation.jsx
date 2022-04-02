@@ -66,7 +66,7 @@ function Donation() {
             <h2 className="card-title">А ви можете зробити пожертву на рахунок:</h2>
           </div>
 
-          <div className="input-group mb-3">
+          <div className="input-group input-group-sm mb-3">
             <span className="input-group-text">BENEFICIARY:</span>
             <input className="form-control" type="text" value={BENEFICIARY} disabled />
             <button
@@ -77,7 +77,7 @@ function Donation() {
             </button>
           </div>
 
-          <div className="input-group mb-3">
+          <div className="input-group input-group-sm mb-3">
             <span className="input-group-text">IBAN:</span>
             <input className="form-control" type="text" value={IBAN} disabled />
             <button className="btn btn-outline-secondary" onClick={copyIban} disabled={!IBAN}>
@@ -85,7 +85,7 @@ function Donation() {
             </button>
           </div>
 
-          <div className="input-group mb-3">
+          <div className="input-group input-group-sm mb-3">
             <span className="input-group-text">ACCOUNT:</span>
             <input className="form-control" type="text" value={ACCOUNT} disabled />
             <button className="btn btn-outline-secondary" onClick={copyAccount} disabled={!ACCOUNT}>
@@ -93,7 +93,7 @@ function Donation() {
             </button>
           </div>
 
-          <div className="input-group mb-3">
+          <div className="input-group input-group-sm mb-3">
             <span className="input-group-text">BANK OF BENEFICIARY:</span>
             <input className="form-control" type="text" value={BANK_OF_BENEFICIARY} disabled />
             <button
@@ -104,7 +104,7 @@ function Donation() {
             </button>
           </div>
 
-          <div className="input-group mb-3">
+          <div className="input-group input-group-sm mb-3">
             <span className="input-group-text">CORRESPONDENT ACCOUNT:</span>
             <input className="form-control" type="text" value={CORRESPONDENT_ACCOUNT} disabled />
             <button
@@ -114,7 +114,7 @@ function Donation() {
               <img src={Copy} alt="Copy button" />
             </button>
           </div>
-          <div className="input-group mb-3">
+          <div className="input-group input-group-sm mb-3">
             <span className="input-group-text">INTERMEDIARY BANK:</span>
             <input className="form-control" type="text" value={INTERMEDIARY_BANK} disabled />
             <button
@@ -125,7 +125,7 @@ function Donation() {
             </button>
           </div>
 
-          <div className="input-group mb-3">
+          <div className="input-group input-group-sm mb-3">
             <span className="input-group-text">CURRENCY:</span>
             <input className="form-control" type="text" value={CURRENCY} disabled />
             <button className="btn btn-outline-secondary" onClick={copy_Currency}>

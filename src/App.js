@@ -17,23 +17,12 @@ function App() {
   return (
     <>
       <NavBar />
-      {/* <Intro />
-      <WhatWeNeed />
-      <Donation />
-      <Activity1 />
-      <Activity2 />
-      <Activity3 />
-      <Shelter1 />
-      <Shelter2 />
-      <AreasOfActivity /> */}
-
       <Routes>
-        <Route path="/" element={<Intro />} />
+        <Route path="/*" element={<Intro />} />
         <Route path="/donation" element={<Donation />} />
         <Route path="/activity" element={<Activity1 />} />
         <Route path="/shelter" element={<Shelter1 />} />
         <Route path="/areas-of-activity" element={<AreasOfActivity />} />
-        {/* <Route path="*" element={<Notfoundpage />} /> */}
       </Routes>
     </>
   );

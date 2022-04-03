@@ -1,6 +1,7 @@
 import Logo from '../images/logo.png';
 import Copy from '../images/copy.svg';
-import styles from './styles.module.css';
+import './styles.module.css';
+import toast from 'toast-me';
 
 function Donation() {
   const BENEFICIARY =
@@ -21,37 +22,51 @@ function Donation() {
 
   const copyBeneficiary = async () => {
     await navigator.clipboard.writeText(BENEFICIARY);
-    alert(`Beneficiary copied to clipboard! ${BENEFICIARY}`);
+    toast('BENEFICIARY copied to clipboard!', {
+      duration: 3000,
+    });
   };
 
   const copyIban = async () => {
     await navigator.clipboard.writeText(IBAN);
-    alert(`Beneficiary copied to clipboard! ${IBAN}`);
+    toast('IBAN copied to clipboard!', {
+      duration: 3000,
+    });
   };
 
   const copyAccount = async () => {
     await navigator.clipboard.writeText(ACCOUNT);
-    alert(`Beneficiary copied to clipboard! ${ACCOUNT}`);
+    toast('ACCOUNT copied to clipboard!', {
+      duration: 3000,
+    });
   };
 
   const copy_Correspondent_Account = async () => {
     await navigator.clipboard.writeText(CORRESPONDENT_ACCOUNT);
-    alert(`Correspondent account copied to clipboard! ${CORRESPONDENT_ACCOUNT}`);
+    toast('CORRESPONDENT ACCOUNT copied to clipboard!', {
+      duration: 3000,
+    });
   };
 
   const copy_Intermediary_Bank = async () => {
-    await navigator.clipboard.writeText(BANK_OF_BENEFICIARY);
-    alert(`Beneficiary copied to clipboard! ${BANK_OF_BENEFICIARY}`);
+    await navigator.clipboard.writeText(INTERMEDIARY_BANK);
+    toast('INTERMEDIARY BANK copied to clipboard!', {
+      duration: 3000,
+    });
   };
 
   const copyBank_of_beneficiary = async () => {
     await navigator.clipboard.writeText(BANK_OF_BENEFICIARY);
-    alert(`Bank of beneficiary copied to clipboard! ${BANK_OF_BENEFICIARY}`);
+    toast('BANK OF BENEFICIARY copied to clipboard!', {
+      duration: 3000,
+    });
   };
 
   const copy_Currency = async () => {
     await navigator.clipboard.writeText(CURRENCY);
-    alert(`Beneficiary copied to clipboard! ${CURRENCY}`);
+    toast('CURRENCY copied to clipboard!', {
+      duration: 3000,
+    });
   };
 
   return (
@@ -59,6 +74,7 @@ function Donation() {
       <div>
         <img src={Logo} alt="Logo" />
       </div>
+
       <div className="card">
         <div className="card-body">
           <div className="mb-5">
@@ -67,7 +83,7 @@ function Donation() {
           </div>
 
           <div className="input-group input-group-sm mb-3">
-            <span className="input-group-text" id="inputGroup-sizing-sm">
+            <span className="input-group-text fw-bold" id="inputGroup-sizing-sm">
               BENEFICIARY:
             </span>
             <input
@@ -79,15 +95,14 @@ function Donation() {
               aria-describedby="inputGroup-sizing-sm"
             />
             <button
-              className="btn btn-outline-secondary"
+              className=" btn btn-outline-secondary"
               onClick={copyBeneficiary}
               disabled={!BENEFICIARY}>
               <img src={Copy} alt="Copy button" />
             </button>
           </div>
-
           <div className="input-group input-group-sm mb-3">
-            <span className="input-group-text" id="inputGroup-sizing-sm">
+            <span className="input-group-text fw-bold" id="inputGroup-sizing-sm">
               IBAN:
             </span>
             <input
@@ -102,9 +117,8 @@ function Donation() {
               <img src={Copy} alt="Copy button" />
             </button>
           </div>
-
           <div className="input-group input-group-sm mb-3">
-            <span className="input-group-text" id="inputGroup-sizing-sm">
+            <span className="input-group-text fw-bold" id="inputGroup-sizing-sm">
               ACCOUNT:
             </span>
             <input
@@ -119,9 +133,8 @@ function Donation() {
               <img src={Copy} alt="Copy button" />
             </button>
           </div>
-
           <div className="input-group input-group-sm mb-3">
-            <span className="input-group-text" id="inputGroup-sizing-sm">
+            <span className="input-group-text fw-bold" id="inputGroup-sizing-sm">
               BANK OF BENEFICIARY:
             </span>
             <input
@@ -139,9 +152,8 @@ function Donation() {
               <img src={Copy} alt="Copy button" />
             </button>
           </div>
-
           <div className="input-group input-group-sm mb-3">
-            <span className="input-group-text" id="inputGroup-sizing-sm">
+            <span className="input-group-text fw-bold" id="inputGroup-sizing-sm">
               CORRESPONDENT ACCOUNT:
             </span>
             <input
@@ -160,7 +172,7 @@ function Donation() {
             </button>
           </div>
           <div className="input-group input-group-sm mb-3">
-            <span className="input-group-text" id="inputGroup-sizing-sm">
+            <span className="input-group-text fw-bold" id="inputGroup-sizing-sm">
               INTERMEDIARY BANK:
             </span>
             <input
@@ -178,9 +190,8 @@ function Donation() {
               <img src={Copy} alt="Copy button" />
             </button>
           </div>
-
           <div className="input-group input-group-sm mb-3">
-            <span className="input-group-text" id="inputGroup-sizing-sm">
+            <span className="input-group-text title fw-bold" id="inputGroup-sizing-sm">
               CURRENCY:
             </span>
             <input

@@ -1,5 +1,4 @@
-import { NavLink, Outlet } from 'react-router-dom';
-import Intro from './Intro';
+import { NavLink } from 'react-router-dom';
 
 function NavBar() {
   return (

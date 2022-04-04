@@ -27,6 +27,9 @@ function Activity1() {
         <img className="mx-auto d-block" src={Logo} alt="Logo" />
       </div> */}
 
+      <div className="mb-5">
+        <h1>Наша діяльність в фото:</h1>
+      </div>
       <AutoplaySlider
         play={true}
         cancelOnInteraction={false} // should stop playing on user interaction

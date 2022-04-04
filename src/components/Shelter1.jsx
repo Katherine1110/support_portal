@@ -2,7 +2,7 @@ import AwesomeSlider from 'react-awesome-slider';
 import withAutoplay from 'react-awesome-slider/dist/autoplay';
 import 'react-awesome-slider/dist/styles.css';
 
-import Logo from '../images/logo.png';
+// import Logo from '../images/logo.png';
 import ShelterPic2 from '../images/shelter/shelter2.png';
 import ShelterPic3 from '../images/shelter/shelter3.png';
 import ShelterPic4 from '../images/shelter/shelter4.png';
@@ -23,8 +23,12 @@ function Shelter1() {
   const AutoplaySlider = withAutoplay(AwesomeSlider);
   return (
     <div className="container">
-      <div>
+      {/* <div>
         <img className="mx-auto d-block" src={Logo} alt="Logo" />
+      </div> */}
+
+      <div className="mb-5">
+        <h1>Сховище, яке ми створили:</h1>
       </div>
       <AutoplaySlider
         play={true}

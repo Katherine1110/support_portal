@@ -3,7 +3,7 @@ import Logo from '../images/logo.png';
 
 function NavBar() {
   return (
-    <div className="container">
+    <div className="container mb-5">
       <nav className="navbar navbar-expand-lg navbar-light bg-light nav-tabs ">
         <div className="container-fluid">
           <NavLink to={'/donation'} class="navbar-brand">

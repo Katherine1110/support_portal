@@ -1,4 +1,4 @@
-import Logo from '../images/logo.png';
+// import Logo from '../images/logo.png';
 import Copy from '../images/copy.svg';
 import './styles.module.css';
 import toast from 'toast-me';
@@ -71,9 +71,9 @@ function Donation() {
 
   return (
     <div className="container App">
-      <div>
+      {/* <div>
         <img src={Logo} alt="Logo" />
-      </div>
+      </div> */}
 
       <div className="card">
         <div className="card-body">

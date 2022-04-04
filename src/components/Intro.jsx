@@ -1,12 +1,12 @@
-import Logo from '../images/logo.png';
+// import Logo from '../images/logo.png';
 import Bicycle from '../images/bicycle.png';
 
 function Intro() {
   return (
     <div className="container">
-      <div className="">
+      {/* <div className="">
         <img className="mx-auto d-block" src={Logo} alt="logo" />
-      </div>
+      </div> */}
       <div className="card">
         <div className="card-body">
           <p>

@@ -1,10 +1,14 @@
 import { NavLink } from 'react-router-dom';
+import Logo from '../images/logo.png';
 
 function NavBar() {
   return (
     <div className="container">
       <nav className="navbar navbar-expand-lg navbar-light bg-light nav-tabs ">
         <div className="container-fluid">
+          <NavLink to={'/donation'} class="navbar-brand">
+            <img src={Logo} alt="Logo" width={100} height={100} />
+          </NavLink>
           <button
             className="navbar-toggler"
             type="button"
@@ -49,6 +53,9 @@ function NavBar() {
                 </NavLink>
               </li>
             </ul>
+            {/* <div>
+              <img src={Logo} alt="Logo" />
+            </div> */}
           </div>
         </div>
       </nav>

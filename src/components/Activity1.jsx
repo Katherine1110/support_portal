@@ -1,4 +1,4 @@
-import Logo from '../images/logo.png';
+// import Logo from '../images/logo.png';
 import ActivityPic1 from '../images/activity/activity1.png';
 import ActivityPic2 from '../images/activity/activity2.png';
 import ActivityPic3 from '../images/activity/activity3.png';
@@ -23,9 +23,9 @@ function Activity1() {
   const AutoplaySlider = withAutoplay(AwesomeSlider);
   return (
     <div className="container">
-      <div>
+      {/* <div>
         <img className="mx-auto d-block" src={Logo} alt="Logo" />
-      </div>
+      </div> */}
 
       <AutoplaySlider
         play={true}

@@ -1,13 +1,13 @@
-import Logo from '../images/logo.png';
+// import Logo from '../images/logo.png';
 // import Storage from '../images/storage.png';
 import Storage from '../images/storage.png';
 
 function WhatWeNeed() {
   return (
     <div className="container">
-      <div>
+      {/* <div>
         <img className="mx-auto d-block" src={Logo} alt="logo" />
-      </div>
+      </div> */}
       <div className="card">
         <div className="card-body">
           <h1 className="card-title">Потребуємо:</h1>

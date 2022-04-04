@@ -1,4 +1,4 @@
-import Logo from '../../images/logo.png';
+// import Logo from '../../images/logo.png';
 import LastPic from '../../images/lastPic.png';
 import Mark from '../../images/checkmark2.svg';
 import styles from './style.css';
@@ -7,9 +7,9 @@ import React from 'react';
 function AreasOfActivity() {
   return (
     <div className="container">
-      <div>
+      {/* <div>
         <img className="mx-auto d-block" src={Logo} alt="Logo" />
-      </div>
+      </div> */}
 
       <div className="card">
         <div className="card-body">

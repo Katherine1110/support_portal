@@ -1,6 +1,7 @@
 // import Logo from '../images/logo.png';
 // import Storage from '../images/storage.png';
 import Storage from '../images/storage.png';
+import Donation from './Donation';
 
 function WhatWeNeed() {
   return (
@@ -10,7 +11,7 @@ function WhatWeNeed() {
       </div> */}
       <div className="card">
         <div className="card-body">
-          <h1 className="card-title">Потребуємо:</h1>
+          <h1 className="card-title">Актуальні потреби:</h1>
           <ul className="list-group list-group-flush mb-4">
             <li className="list-group-item">Харчові продукти тривалого зберігання;</li>
             <li className="list-group-item">
@@ -30,6 +31,7 @@ function WhatWeNeed() {
           <div>
             <img className="img-fluid mx-auto d-block" src={Storage} alt="Storage" />
           </div>
+          <Donation />
         </div>
       </div>
     </div>

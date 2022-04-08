@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import Logo from '../images/logo.png';
+import Logo from '../images/logo_support.png';
 
 function NavBar() {
   return (
@@ -7,7 +7,7 @@ function NavBar() {
       <nav className="navbar navbar-expand-lg navbar-light bg-light nav-tabs ">
         <div className="container-fluid">
           <NavLink to={'/donation'} class="navbar-brand">
-            <img src={Logo} alt="Logo" width={100} height={100} />
+            <img src={Logo} alt="Logo" width={80} height={100} />
           </NavLink>
           <button
             className="navbar-toggler"
@@ -27,11 +27,15 @@ function NavBar() {
                 </NavLink>
               </li>
               <li className="nav-item">
+                <NavLink to="/what_we_need" activeclassname="selected" className="nav-link">
+                  Актуальні потреби
+                </NavLink>
+              </li>
+              <li className="nav-item">
                 <NavLink to="/donation" activeclassname="selected" className="nav-link">
                   Задонатити
                 </NavLink>
               </li>
-
               <li className="nav-item">
                 <NavLink to="/activity" activeclassname="selected" className="nav-link">
                   Наша діяльність
@@ -42,11 +46,7 @@ function NavBar() {
                   Сховище
                 </NavLink>
               </li>
-              <li className="nav-item">
-                <NavLink to="/what_we_need" activeclassname="selected" className="nav-link">
-                  Потребуємо
-                </NavLink>
-              </li>
+
               <li className="nav-item">
                 <NavLink to="/areas-of-activity" activeclassname="selected" className="nav-link">
                   Завдання та напрямками діяльності Організації

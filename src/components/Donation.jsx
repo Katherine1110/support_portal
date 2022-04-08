@@ -80,6 +80,7 @@ function Donation() {
           <div className="mb-5">
             <h2 className="card-title">Звичайно, ми маємо де все це придбати.</h2>
             <h2 className="card-title">А ви можете зробити пожертву на рахунок:</h2>
+            <h2>Реквізити:</h2>
           </div>
 
           <div className="input-group input-group-sm mb-3">

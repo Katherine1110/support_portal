@@ -16,10 +16,12 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/*" element={<Intro />} />
-        <Route path="/donation" element={<Donation />} />
+        <Route path="/what_we_need" element={<WhatWeNeed />} />
+
         <Route path="/activity" element={<Activity1 />} />
         <Route path="/shelter" element={<Shelter1 />} />
-        <Route path="/what_we_need" element={<WhatWeNeed />} />
+        <Route path="/donation" element={<Donation />} />
+
         <Route path="/areas-of-activity" element={<AreasOfActivity />} />
       </Routes>
     </>

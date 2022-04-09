@@ -71,17 +71,9 @@ function Donation() {
 
   return (
     <div className="container App">
-      {/* <div>
-        <img src={Logo} alt="Logo" />
-      </div> */}
-
       <div className="card">
         <div className="card-body">
-          <div className="mb-5">
-            <h2 className="card-title">Звичайно, ми маємо де все це придбати.</h2>
-            <h2 className="card-title">А ви можете зробити пожертву на рахунок:</h2>
-            <h2>Реквізити:</h2>
-          </div>
+          <h1 className="card-title mb-4">Реквізити:</h1>
 
           <div className="input-group input-group-sm mb-3">
             <span className="input-group-text fw-bold" id="inputGroup-sizing-sm">

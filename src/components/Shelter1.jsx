@@ -23,17 +23,10 @@ function Shelter1() {
   const AutoplaySlider = withAutoplay(AwesomeSlider);
   return (
     <div className="container">
-      {/* <div>
-        <img className="mx-auto d-block" src={Logo} alt="Logo" />
-      </div> */}
-
       <div className="mb-5">
         <h1>Сховище, яке ми створили:</h1>
       </div>
-      <AutoplaySlider
-        play={true}
-        cancelOnInteraction={false} // should stop playing on user interaction
-        interval={3000}>
+      <AutoplaySlider play={true} cancelOnInteraction={false} interval={3000}>
         <div data-src={ShelterPic2} />
         <div data-src={ShelterPic3} />
         <div data-src={ShelterPic4} />

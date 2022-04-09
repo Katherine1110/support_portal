@@ -1,12 +1,8 @@
-// import Logo from '../images/logo.png';
 import Bicycle from '../images/bicycle.png';
 
 function Intro() {
   return (
     <div className="container">
-      {/* <div className="">
-        <img className="mx-auto d-block" src={Logo} alt="logo" />
-      </div> */}
       <div className="card">
         <div className="card-body">
           <p>
@@ -18,8 +14,11 @@ function Intro() {
             Маємо своє текстильне виробництво в Києві. Працюємо з укриттями, фондами, волонтерами,
             державними установами, ЗСУ та ТерОбороною.
           </p>
+          <a className="btn btn-primary col-3 mx-auto mb-4" href="/what_we_need" role="button">
+            Приєднатися
+          </a>
+          <img className="card-img" src={Bicycle} alt="Bicycle" />
         </div>
-        <img className="img-fluid" src={Bicycle} alt="Bicycle" />
       </div>
     </div>
   );

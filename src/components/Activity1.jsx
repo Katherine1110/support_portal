@@ -23,48 +23,35 @@ function Activity1() {
   const AutoplaySlider = withAutoplay(AwesomeSlider);
   return (
     <div className="container">
-      {/* <div>
-        <img className="mx-auto d-block" src={Logo} alt="Logo" />
-      </div> */}
-
-      <div className="mb-5">
+      <div className="mb-4">
         <h1>Наша діяльність в фото:</h1>
       </div>
-      <AutoplaySlider
-        play={true}
-        cancelOnInteraction={false} // should stop playing on user interaction
-        interval={3000}>
-        <div data-src={ActivityPic1} />
-        <div data-src={ActivityPic2} />
-        <div data-src={ActivityPic3} />
-        <div data-src={ActivityPic4} />
-        <div data-src={ActivityPic5} />
-        <div data-src={ActivityPic6} />
-        <div data-src={ActivityPic7} />
-        <div data-src={ActivityPic8} />
-        <div data-src={ActivityPic9} />
-        <div data-src={ActivityPic10} />
-        <div data-src={ActivityPic11} />
-        <div data-src={ActivityPic12} />
-        <div data-src={ActivityPic13} />
-        <div data-src={ActivityPic14} />
-        <div data-src={ActivityPic15} />
-      </AutoplaySlider>
+      <div>
+        <AutoplaySlider
+          play={true}
+          cancelOnInteraction={false} // should stop playing on user interaction
+          interval={3000}>
+          <div data-src={ActivityPic1} />
+          <div data-src={ActivityPic2} />
+          <div data-src={ActivityPic3} />
+          <div data-src={ActivityPic4} />
+          <div data-src={ActivityPic5} />
+          <div data-src={ActivityPic6} />
+          <div data-src={ActivityPic7} />
+          <div data-src={ActivityPic8} />
+          <div data-src={ActivityPic9} />
+          <div data-src={ActivityPic10} />
+          <div data-src={ActivityPic11} />
+          <div data-src={ActivityPic12} />
+          <div data-src={ActivityPic13} />
+          <div data-src={ActivityPic14} />
+          <div data-src={ActivityPic15} />
+        </AutoplaySlider>
+      </div>
     </div>
   );
 }
 
 export default Activity1;
 
-{
-  /* Gallery1  */
-}
-//  <div className="card">
-//    <div className="card-body">
-//      <h2 className="card-title mb-4">Наша діяльність в фото:</h2>
-//      <img className="img-fluid mx-auto d-block" src={Collage1} alt="Our activity" />
-//    </div>
-//  </div>;
-{
-  /* Gallery1 */
-}
+// className="mx-auto" style={{ width: '850px' }}

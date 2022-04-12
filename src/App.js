@@ -1,7 +1,5 @@
-import { Routes, Route, Link } from 'react-router-dom';
-import logo from './logo.svg';
+import { Routes, Route} from 'react-router-dom';
 import './App.css';
-// import Logo from '../images/logo.png';
 import Intro from './components/Intro';
 import WhatWeNeed from './components/WhatWeNeed';
 import Donation from './components/Donation';

@@ -1,7 +1,4 @@
-// import Logo from '../../images/logo.png';
 import LastPic from '../../images/lastPic.png';
-import Mark from '../../images/checkmark2.svg';
-import styles from './styles.module.css';
 import React from 'react';
 import { CodeOfConductIcon, ChecklistIcon } from '@primer/octicons-react';
 

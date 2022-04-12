@@ -58,4 +58,4 @@ jobs:
 #          SOURCE_DIR: "build"
 
       - name: Deploy to prod
-        run:  aws s3 sync ./build/ s3://${{ secrets.AWS_S3_BUCKET }} --delete
+        run:  aws s3 sync ./build/ s3://${{ secrets.AWS_S3_BUCKET }}

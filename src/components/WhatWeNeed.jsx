@@ -3,6 +3,7 @@ import Copy from '../images/copy.svg';
 import './styles.module.css';
 import toast from 'toast-me';
 import { CheckIcon } from '@primer/octicons-react';
+import { Outlet } from 'react-router-dom';
 
 function WhatWeNeed() {
   const BENEFICIARY =
@@ -125,138 +126,7 @@ function WhatWeNeed() {
             <div className="mb-5">
               <img className="card-img img-fluid mx-auto d-block" src={Storage} alt="Storage" />
             </div>
-            <div className="mb-5">
-              <h2 className="card-title">Звичайно, ми маємо де все це придбати.</h2>
-              <h2 className="card-title">А ви можете зробити пожертву на рахунок:</h2>
-            </div>
-
-            <div className="input-group input-group-sm mb-3">
-              <span className="input-group-text fw-bold" id="inputGroup-sizing-sm">
-                BENEFICIARY:
-              </span>
-              <input
-                className="form-control"
-                type="text"
-                value={BENEFICIARY}
-                disabled
-                aria-label="Sizing example input"
-                aria-describedby="inputGroup-sizing-sm"
-              />
-              <button
-                className=" btn btn-outline-secondary"
-                onClick={copyBeneficiary}
-                disabled={!BENEFICIARY}>
-                <img src={Copy} alt="Copy button" />
-              </button>
-            </div>
-            <div className="input-group input-group-sm mb-3">
-              <span className="input-group-text fw-bold" id="inputGroup-sizing-sm">
-                IBAN:
-              </span>
-              <input
-                className="form-control"
-                type="text"
-                value={IBAN}
-                disabled
-                aria-label="Sizing example input"
-                aria-describedby="inputGroup-sizing-sm"
-              />
-              <button className="btn btn-outline-secondary" onClick={copyIban} disabled={!IBAN}>
-                <img src={Copy} alt="Copy button" />
-              </button>
-            </div>
-            <div className="input-group input-group-sm mb-3">
-              <span className="input-group-text fw-bold" id="inputGroup-sizing-sm">
-                ACCOUNT:
-              </span>
-              <input
-                className="form-control"
-                type="text"
-                value={ACCOUNT}
-                disabled
-                aria-label="Sizing example input"
-                aria-describedby="inputGroup-sizing-sm"
-              />
-              <button
-                className="btn btn-outline-secondary"
-                onClick={copyAccount}
-                disabled={!ACCOUNT}>
-                <img src={Copy} alt="Copy button" />
-              </button>
-            </div>
-            <div className="input-group input-group-sm mb-3">
-              <span className="input-group-text fw-bold" id="inputGroup-sizing-sm">
-                BANK OF BENEFICIARY:
-              </span>
-              <input
-                className="form-control"
-                type="text"
-                value={BANK_OF_BENEFICIARY}
-                disabled
-                aria-label="Sizing example input"
-                aria-describedby="inputGroup-sizing-sm"
-              />
-              <button
-                className="btn btn-outline-secondary"
-                onClick={copyBank_of_beneficiary}
-                disabled={!BANK_OF_BENEFICIARY}>
-                <img src={Copy} alt="Copy button" />
-              </button>
-            </div>
-            <div className="input-group input-group-sm mb-3">
-              <span className="input-group-text fw-bold" id="inputGroup-sizing-sm">
-                CORRESPONDENT ACCOUNT:
-              </span>
-              <input
-                className="form-control"
-                type="text"
-                value={CORRESPONDENT_ACCOUNT}
-                disabled
-                aria-label="Sizing example input"
-                aria-describedby="inputGroup-sizing-sm"
-              />
-              <button
-                className="btn btn-outline-secondary"
-                onClick={copy_Correspondent_Account}
-                disabled={!CORRESPONDENT_ACCOUNT}>
-                <img src={Copy} alt="Copy button" />
-              </button>
-            </div>
-            <div className="input-group input-group-sm mb-3">
-              <span className="input-group-text fw-bold" id="inputGroup-sizing-sm">
-                INTERMEDIARY BANK:
-              </span>
-              <input
-                className="form-control"
-                type="text"
-                value={INTERMEDIARY_BANK}
-                disabled
-                aria-label="Sizing example input"
-                aria-describedby="inputGroup-sizing-sm"
-              />
-              <button
-                className="btn btn-outline-secondary"
-                onClick={copy_Intermediary_Bank}
-                disabled={!INTERMEDIARY_BANK}>
-                <img src={Copy} alt="Copy button" />
-              </button>
-            </div>
-            <div className="input-group input-group-sm mb-3">
-              <span className="input-group-text title fw-bold" id="inputGroup-sizing-sm">
-                CURRENCY:
-              </span>
-              <input
-                className="form-control"
-                type="text"
-                value={CURRENCY}
-                disabled
-                aria-label="Sizing example input"
-                aria-describedby="inputGroup-sizing-sm"
-              />
-              <button className="btn btn-outline-secondary" onClick={copy_Currency}>
-                <img src={Copy} alt="Copy button" />
-              </button>
-            </div>
+            <Outlet />
           </div>
         </div>
       </div>

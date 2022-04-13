@@ -15,8 +15,10 @@ function App() {
     <>
       <NavBar />
       <Routes>
-        <Route path="/*" element={<Intro />} />
-        <Route path="/what_we_need" element={<WhatWeNeed />} />
+        <Route path="/" element={<Intro />} />
+        <Route path="/what_we_need" element={<WhatWeNeed />}>
+          <Route path="/what_we_need" element={<Donation />} />
+        </Route>
         <Route path="/activity" element={<Activity1 />} />
         <Route path="/shelter" element={<Shelter1 />} />
         <Route path="/donation" element={<Donation />} />

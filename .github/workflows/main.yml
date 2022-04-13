@@ -6,7 +6,7 @@ name: Deploy to production.
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    branches: [ master, Semer7-ci-cd-patch ]
+    branches: [ master, Semer7_ci-cd_patch ]
 #  pull_request:
 #    branches: [ master ]
 

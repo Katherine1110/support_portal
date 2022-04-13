@@ -45,6 +45,10 @@ jobs:
         
       - name:  Build for prod
         run: npm run build
+
+      - uses: montudor/action-zip@v1
+        with:
+          args: zip -qq -r build.zip build
       
 #      - name: Deploy to prod
 #        uses: jakejarvis/s3-sync-action@master
@@ -57,5 +61,7 @@ jobs:
 #          AWS_REGION: ${{ secrets.AWS_REGION }}
 #          SOURCE_DIR: "build"
 
+#      - name: Deploy to prod
+#        run:  aws s3 sync ./build/ s3://${{ secrets.AWS_S3_BUCKET }}
       - name: Deploy to prod
-        run:  aws s3 sync ./build/ s3://${{ secrets.AWS_S3_BUCKET }}
+        run:  aws s3 sync build.zip s3://${{ secrets.AWS_S3_BUCKET }}

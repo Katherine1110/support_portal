@@ -1,9 +1,8 @@
-// import Logo from '../images/logo.png';
 import Copy from '../images/copy.svg';
 import './styles.module.css';
 import toast from 'toast-me';
 
-function Donation() {
+function Donation(props) {
   const BENEFICIARY =
     'ANTOSHYNA KRYSTYNA 01001, Ukraine,city Kyiv, boulevard Druzhby Narodiv,building 3,Housing B,flat 12';
 
@@ -73,7 +72,11 @@ function Donation() {
     <div className="container App">
       <div className="card">
         <div className="card-body">
-          <h1 className="card-title mb-4">Реквізити:</h1>
+          <h1 className="card-title mb-4">{props.title}</h1>
+          <div className="mb-5">
+            <h2 className="card-title">{props.title1}</h2>
+            <h2 className="card-title">{props.title2}</h2>
+          </div>
 
           <div className="input-group input-group-sm mb-3">
             <span className="input-group-text fw-bold" id="inputGroup-sizing-sm">

@@ -13,7 +13,8 @@ function App() {
     <>
       <NavBar />
       <Routes>
-        <Route path="*" element={<Intro />} />
+        <Route index element={<Intro />} />
+        <Route path="/" element={<Intro />} />
         <Route path="/what_we_need" element={<WhatWeNeed />}>
           <Route
             path="/what_we_need"

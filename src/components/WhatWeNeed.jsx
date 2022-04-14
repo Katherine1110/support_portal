@@ -1,4 +1,3 @@
-import Storage from '../images/storage.png';
 import './styles.module.css';
 import { CheckIcon } from '@primer/octicons-react';
 import { Outlet } from 'react-router-dom';
@@ -58,7 +57,7 @@ function WhatWeNeed() {
               <li className="list-group-item"></li>
             </ul>
             <div className="mb-5">
-              <img className="card-img img-fluid mx-auto d-block" src={Storage} alt="Storage" />
+              <img className="card-img img-fluid mx-auto d-block" src="https://support-portal-for-ukraine.s3.eu-central-1.amazonaws.com/images/storage.png" alt="Storage" />
             </div>
             <Outlet />
           </div>

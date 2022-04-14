@@ -1,4 +1,3 @@
-import Bicycle from '../images/bicycle.png';
 
 function Intro() {
   return (
@@ -17,7 +16,7 @@ function Intro() {
           <a className="btn btn-primary col-3 mx-auto mb-4" href="/what_we_need" role="button">
             Приєднатися
           </a>
-          <img className="card-img" src={Bicycle} alt="Bicycle" />
+          <img className="card-img" src="https://support-portal-for-ukraine.s3.eu-central-1.amazonaws.com/images/bicycle.png" alt="Bicycle" />
         </div>
       </div>
     </div>

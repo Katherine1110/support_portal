@@ -1,5 +1,4 @@
 import { NavLink } from 'react-router-dom';
-import Logo from '../images/logo_support.png';
 
 function NavBar() {
   const navBar = document.querySelector('.navbar-collapse');
@@ -12,7 +11,7 @@ function NavBar() {
       <nav className="navbar navbar-expand-lg navbar-light bg-light nav-tabs ">
         <div className="container-fluid">
           <NavLink to={'/what_we_need'} className="navbar-brand">
-            <img src={Logo} alt="Logo" width={80} height={100} />
+            <img src="https://support-portal-for-ukraine.s3.eu-central-1.amazonaws.com/images/logo_support.png" alt="Logo" width={80} height={100} />
           </NavLink>
 
           <button

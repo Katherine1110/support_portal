@@ -13,18 +13,17 @@ function App() {
     <>
       <NavBar />
       <Routes>
-        <Route index element={<Intro />} />
         <Route path="/" element={<Intro />} />
         <Route path="/what_we_need" element={<WhatWeNeed />}>
-          <Route
-            path="/what_we_need"
-            element={
-              <Donation
-                title1="Звичайно, ми маємо де все це придбати."
-                title2="А ви можете зробити пожертву на рахунок:"
-              />
-            }
-          />
+          {/*<Route*/}
+          {/*  path="/what_we_need"*/}
+          {/*  element={*/}
+          {/*    <Donation*/}
+          {/*      title1="Звичайно, ми маємо де все це придбати."*/}
+          {/*      title2="А ви можете зробити пожертву на рахунок:"*/}
+          {/*    />*/}
+          {/*  }*/}
+          {/*/>*/}
         </Route>
         <Route path="/activity" element={<Activity1 />} />
         <Route path="/shelter" element={<Shelter1 />} />

@@ -1,7 +1,3 @@
-// import Logo from '../../images/logo.png';
-import LastPic from '../../images/lastPic.png';
-import Mark from '../../images/checkmark2.svg';
-import styles from './styles.module.css';
 import React from 'react';
 import { CodeOfConductIcon, ChecklistIcon } from '@primer/octicons-react';
 
@@ -104,7 +100,7 @@ function AreasOfActivity() {
               межами.
             </li>
           </ul>
-          <img className="card-img img-fluid mx-auto d-block" src={LastPic} alt="" />
+          <img className="card-img img-fluid mx-auto d-block" src="https://support-portal-for-ukraine.s3.eu-central-1.amazonaws.com/images/lastPic.png" alt="" />
         </div>
       </div>
     </div>

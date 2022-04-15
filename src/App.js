@@ -14,17 +14,7 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<Intro />} />
-        <Route path="/what_we_need" element={<WhatWeNeed />}>
-          {/*<Route*/}
-          {/*  path="/what_we_need"*/}
-          {/*  element={*/}
-          {/*    <Donation*/}
-          {/*      title1="Звичайно, ми маємо де все це придбати."*/}
-          {/*      title2="А ви можете зробити пожертву на рахунок:"*/}
-          {/*    />*/}
-          {/*  }*/}
-          {/*/>*/}
-        </Route>
+        <Route path="/what_we_need" element={<WhatWeNeed />}/>
         <Route path="/activity" element={<Activity1 />} />
         <Route path="/shelter" element={<Shelter1 />} />
         <Route path="/donation" element={<Donation title="Реквізити:" />} />

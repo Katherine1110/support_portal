@@ -45,7 +45,7 @@ jobs:
         run: npm install
         
       - name:  Build for prod
-        run: npm run build
+        run: PUBLIC_URL=http://supportportal.com.ua/; npm run build
       
 #      - name: Deploy to prod
 #        uses: jakejarvis/s3-sync-action@master
